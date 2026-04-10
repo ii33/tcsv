@@ -42,6 +42,10 @@ Generate CSV files with the following structure:
 ,,,,Reference Wavelength,1064
 ```
 
+## Quick Download
+
+[**Download Latest Version (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
+
 ## Building and Compilation
 
 **Requirements:**

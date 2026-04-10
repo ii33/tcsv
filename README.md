@@ -42,6 +42,10 @@
 ,,,,,参考波长,1064
 ```
 
+## 快速下载
+
+[**下载最新版本 (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
+
 ## 编译构建
 
 **系统要求：**
