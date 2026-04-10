@@ -1,6 +1,9 @@
 # TFD 转 CSV 转换工具
 
 **中文** | [English](README_EN.md)
+## 快速下载
+
+[**下载最新版本 (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
 
 ## 项目概述
 
@@ -41,10 +44,6 @@
 ,,,,M材料,Y2O3
 ,,,,,参考波长,1064
 ```
-
-## 快速下载
-
-[**下载最新版本 (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
 
 ## 编译构建
 

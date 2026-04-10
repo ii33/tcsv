@@ -2,6 +2,11 @@
 
 [中文文档](README.md) | **English**
 
+## Quick Download
+
+[**Download Latest Version (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
+
+
 ## Project Overview
 
 **TFD to CSV Converter** is a C++ utility for parsing TFCalc `.tfd` (Thin Film Design) optical coating design files and exporting layer information to structured CSV files.
@@ -41,10 +46,6 @@ Generate CSV files with the following structure:
 ,,,,M Material,Y2O3
 ,,,,Reference Wavelength,1064
 ```
-
-## Quick Download
-
-[**Download Latest Version (v0.1)**](https://github.com/ii33/tcsv/releases/download/0.1/tcsv.exe)
 
 ## Building and Compilation
 
