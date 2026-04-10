@@ -8,16 +8,16 @@
 
 ## Features
 
-- **Automatic TFD File Detection**: Recursively scans the current directory for all `.tfd` files
-- **Complete Data Extraction**: Extracts layer count, materials, optical thickness, physical thickness, and optical properties
-- **Smart Encoding**: Converts materials to symbolic representations (H, L, M, etc.) based on refractive index
+- **Automatic TFD File Detection**: Scans the current directory for all `.tfd` files
+- **Data Extraction**: Extracts layer count, materials, optical thickness, physical thickness, and optical properties
+- **Converts to Stack Formula**: Converts the coating system into stack formula representation
 - **Comprehensive Summary**: Generates detailed metadata including substrate material, reference wavelength, and material totals
 - **Smart Caching**: Compares file contents before writing to avoid unnecessary updates
 - **Chinese Filename Support**: Full Unicode support for Chinese directory and file names
 
 ## Output Format
 
-The converter generates CSV files with the following structure:
+Generate CSV files with the following structure:
 
 | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 | Column 6 |
 |----------|----------|----------|----------|----------|----------|
@@ -77,19 +77,18 @@ Output: tcsv/test.csv
 
 ## Output Details
 
-**Data Rows:** Each layer is represented with:
-- Layer number (sequential index)
+**Data Rows:** Each layer contains the following information:
+- Layer number
 - Material name
-- Optical thickness (floating-point value)
-- Physical thickness in nanometers
-- Empty columns 5-6 (reserved for metadata)
+- Optical thickness
+- Physical thickness (nanometers)
 
-**Summary Section:** Following all data rows:
+**Summary Section:** Following all data rows, includes:
 - Total number of layers
-- Total physical thickness sum
+- Total physical thickness
 - Per-material physical thickness totals
 - Stack formula with material symbols and coefficients
-- Substrate material identification
+- Substrate material
 - Material-to-symbol mapping
 - Reference wavelength (design wavelength)
 
@@ -98,7 +97,8 @@ Output: tcsv/test.csv
 ```
 tcsv/
 ├── tcsv.cpp          # Main source code
-└── README.md         # This file
+├── README.md         # Chinese documentation
+└── README_EN.md      # English documentation
 ```
 
 ---
