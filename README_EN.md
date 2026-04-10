@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-**TFD to CSV Converter** is a C++ utility that parses TFCalc `.tfd` (Thin Film Design) optical coating design files and exports layer information to structured CSV files. This tool is designed for researchers and engineers working with thin film optical coatings.
+**TFD to CSV Converter** is a C++ utility for parsing TFCalc `.tfd` (Thin Film Design) optical coating design files and exporting layer information to structured CSV files.
 
 ## Features
 
@@ -25,16 +25,16 @@ The converter generates CSV files with the following structure:
 
 **Example Output:**
 ```csv
-1,Y2O3,0.182331,32.5,,
-2,ZNS,1.89019,275.8,,
-3,YBF3,0.233049,52.4,,
+1,Y2O3,0.1767531,32.5,,
+2,ZNS,2.45019,275.8,,
+3,YBF3,1.893049,52.4,,
 ...
-,,,,Total Layers,56
+,,,,Total Layers,62
 ,,,,Total Physical Thickness,9245.3
 ,,,,Y2O3 Total,32.5
-,,,,YBF3 Total,5821.6
-,,,,ZNS Total,3391.2
-,,,,Stack Formula,0.182331M 1.890187H 0.233049L ...
+,,,,YBF3 Total,6464.6
+,,,,ZNS Total,4123.2
+,,,,Stack Formula,0.1767531M 2.45019H 1.893049L ...
 ,,,,Substrate Material,ZNS
 ,,,,H Material,ZNS
 ,,,,L Material,YBF3
@@ -61,19 +61,18 @@ g++ tcsv.cpp -o tcsv.exe -std=c++17
 2. Double-click `tcsv.exe` to run
 3. The program automatically scans all `.tfd` files and creates a `tcsv` directory for output
 
-### Command Line (For Output Feedback or Automation)
+### Command Line
 
 1. Place your `.tfd` files in the working directory
 2. Run the executable:
    ```bash
    ./tcsv.exe
    ```
-3. The program prints processing feedback and can be integrated into automation workflows
 
 **Example:**
 ```
-Input:  膜系.tfd, test.tfd
-Output: tcsv/膜系.csv, tcsv/test.csv
+Input:  test.tfd
+Output: tcsv/test.csv
 ```
 
 ## Output Details
@@ -109,7 +108,6 @@ tcsv/
 - **Current Version**: 0.1
 - **Release Date**: 2026-04-10
 - **C++ Standard**: C++17
-- **Supported Platforms**: Windows, Linux, macOS
 
 ## License
 
